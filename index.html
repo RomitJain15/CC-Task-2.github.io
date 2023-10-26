@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" href="tic-tac-toe-icon.png">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>
+                Tic
+                <em> Tac </em>
+                Toe
+            </span>
+        </div>
+        <div class="player-info">X's Turn</div>
+        <div class="game">
+            <div class="grid">
+                <div class="square del-border-left del-border-top" id="0"></div>
+                <div class="square del-border-top" id="1"></div>
+                <div class="square del-border-right del-border-top" id="2"></div>
+                <div class="square del-border-left" id="3"></div>
+                <div class="square" id="4"></div>
+                <div class="square del-border-right" id="5"></div>
+                <div class="square del-border-left del-border-bottom" id="6"></div>
+                <div class="square del-border-bottom" id="7"></div>
+                <div class="square del-border-right del-border-bottom" id="8"></div>
+            </div>
+            <div class="about-game">
+                <div class="scoreboard">
+                    Score:
+                    <div class="scores">
+                        <div class="player1">
+                            <span>Player 1</span>
+                            <div class="score1">0</div>
+                        </div>
+                        <div class="ties">
+                            <span>Ties</span>
+                            <div class="tie-cnt">0</div>
+                        </div>
+                        <div class="player2">
+                            <span>Player 2</span>
+                            <div class="score2">0</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="restart">Restart</button>
+            </div>
+        </div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

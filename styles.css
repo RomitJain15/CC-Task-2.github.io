@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Patrick+Hand+SC&family=Playpen+Sans:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.header span {
+    color: yellow;
+    font-size: 6em;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.header span em {
+    font-style: normal;
+    border-bottom: 4px solid yellow;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.player-info {
+    margin-top: 0.5em;
+    font-size: 3em;
+    color: #00ffce;
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 10em);
+    grid-template-rows: repeat(3, 10em);
+    text-align: center;
+}
+
+.square {
+    display: flex;
+    border: 2px solid white;
+    font-size: 8em;
+    font-family: 'Playpen Sans', cursive;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.square:hover {
+    background-color: rgb(12 6 35);
+}
+
+.del-border-right {
+    border-right: 0;
+}
+
+.del-border-left {
+    border-left: 0;
+}
+
+.del-border-top {
+    border-top: 0;
+}
+
+.del-border-bottom {
+    border-bottom: 0;
+}
+
+.about-game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5em;
+    height: 100%;
+}
+
+.scoreboard {
+    font-family: 'Playpen Sans', cursive;
+    color: #1eff00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.75em;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+    width: 120%;
+    margin-top: 1em;
+}
+
+.player1,
+.player2,
+.ties {
+    text-align: center;
+    flex: 1;
+    padding: 0 1em;
+}
+
+.restart {
+    margin-top: -10em;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 3px;
+    height: 2em;
+}
+
+.restart:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 1100px) {  
+    .game {
+        font-size: 10px;
+    }
+    .game {
+        justify-content: center;
+    }
+
+    .about-game {
+        padding-left: 0;
+    }
+
+    .restart {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 300px) {
+    .game {
+        font-size: 8px;
+    }
+}
